@@ -1,0 +1,11 @@
+{
+  "name": "my-project-name",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-livereload": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-compass": "*",
+    "grunt-contrib-watch": "*"
+  }
+}
