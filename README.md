@@ -1,6 +1,6 @@
-grunt-test
+web-scaffolding
 ============
- > This is a web development environment based on grunt
+ > This is a customized web frontend scaffolding project inspired from [Yeoman](http://yeoman.io)
 
 Supported features currently:
  * Compile s[ac]ss when file is modified automatically
@@ -14,3 +14,6 @@ Supported features currently:
 ```shell
 grunt
 ```
+
+####Todo
+ * Build AMD optimized pack of all javascript, css and template html files.
