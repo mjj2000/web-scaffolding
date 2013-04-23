@@ -1,0 +1,21 @@
+diff -aruN grunt-test.old/node_modules/grunt-contrib-livereload/lib/utils.js grunt-test.fix/node_modules/grunt-contrib-livereload/lib/utils.js
+--- grunt-test.old/node_modules/grunt-contrib-livereload/lib/utils.js	2013-02-26 03:13:55.000000000 +0800
++++ grunt-test.fix/node_modules/grunt-contrib-livereload/lib/utils.js	2013-04-23 18:44:58.000000000 +0800
+@@ -16,10 +16,15 @@
+   });
+ 
+   _server = new Server();
+-  grunt.log.writeln('... Starting Livereload server on ' + options.port + ' ...');
++  // grunt.log.writeln('... Starting Livereload server on ' + options.port + ' ...');
+   port = options.port;
+ 
+-  _server.listen(options.port, done);
++  _server.listen(options.port, function () {
++     var addr = this.address();
++     port = addr.port;
++     grunt.log.writeln('... Starting Livereload server on ' + port + ' ...');
++     done();
++  });
+   return _server;
+ };
+ 
