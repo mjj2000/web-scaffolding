@@ -8,7 +8,7 @@ Supported features currently:
 
 ####Install required packages
 ```shell
-npm install -g grunt-cli
+npm install -g grunt-cli # if grunt-cli already exists, skip this command
 npm install .
 ```
 ####Usage
