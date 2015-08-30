@@ -11,8 +11,11 @@ Supported features currently:
 ./install.sh
 ```
 ####Usage
+
+- Start livereload dev server
+
 ```shell
-grunt
+grunt server
 ```
 
 ####Todo

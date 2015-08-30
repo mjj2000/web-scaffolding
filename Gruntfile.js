@@ -74,7 +74,7 @@ module.exports = function(grunt) {
   });
 
   // Default task(s).
-  grunt.registerTask('default', [
+  grunt.registerTask('server', [
     // 'livereload-start',
     'connect:server',
     'openport:watch.options.livereload.port:' + grunt.config.get('watch.options.livereload.port'),
