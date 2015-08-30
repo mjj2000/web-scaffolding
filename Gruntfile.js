@@ -44,6 +44,11 @@ module.exports = function(grunt) {
         options: {              // Target options
           sassDir: '<%= config.css %>',
           cssDir: '<%= config.css %>',
+          assetCacheBuster: false,
+          force: true,
+          trace: true,
+          imagesDir: '<%= config.css %>/images',
+          relativeAssets: true,
           environment: 'development'
         }
       }
