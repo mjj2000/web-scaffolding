@@ -6,11 +6,12 @@ Supported features currently:
  * Compile s[ac]ss when file is modified automatically
  * Create web site for testing with livereload
 
-####Install required packages
+#### Install required packages
+
 ```shell
 ./install.sh
 ```
-####Usage
+#### Usage
 
 - Start livereload dev server
 
@@ -18,5 +19,5 @@ Supported features currently:
 grunt server
 ```
 
-####Todo
+#### Todo
  * Build AMD optimized pack of all javascript, css and template html files.
